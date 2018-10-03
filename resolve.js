@@ -14,7 +14,7 @@ module.exports = function (id, opts, cb) {
 
   const packageFilter = opts.packageFilter;
   opts = Object.assign({}, opts, {
-    extensions: [ '.mjs', '.js' ],
+    extensions: [ '.mjs', '.js', '.json ],
     packageFilter: function (info, pkgdir) {
       if (packageFilter) info = packageFilter(info, pkgdir);
 
